@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link rel="icon" href="images/leaf-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+
+      <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script> -->
+  </head>
+  
+  <body>
+
+    <ul class = hdr>
+      <li class = "hd"><a href="#Submit">Submit</a></li>
+      <li class = "hd"><a href="#Questions">Questions</a></li>
+      <li class = "hd"><a href="#top">Nookazon UI</a></li>
+
+    </ul>
+
+    <br>
+
+    <h1>Website UI Survey</h1>
+
+    <h2>What do you think of the UI for the <a href="https://nookazon.com/">Nookazon</a> site?</h2>
+    <br>
+    <a id="Nookazon-UI" href="https://nookazon.com/" target="_blank">
+      <img class = "imageBorder" src="images/nookazon.png" alt="https://nookazon.com/" width="1125" height="540">
+    </a>
+
+    <form>
+      <br id="Questions">
+      <br>
+
+
+      <div class="question">
+        <h2>1) What are your initial impressions on the site's aesthetics?</h2>
+        <br>
+        <textarea rows="5" cols="150" name="impressions" required></textarea>
+      </div>
+      <br>
+      <br>
+
+      <div  class="question-right">
+        <h2> 2) Which words would you use to describe the site's UI? </h2>
+        <br>
+        <input type="checkbox" name="adj" value="Confusing"> Confusing<br>
+        <input type="checkbox" name="adj" value="Appealing"> Appealing<br>
+        <input type="checkbox" name="adj" value="Overwhelming"> Overwhelming<br>
+        <input type="checkbox" name="adj" value="Organized"> Organized<br>
+        <input type="checkbox" name="adj" value="Intuitive"> Intuitive<br>
+        <input type="checkbox" name="adj" value="Cluttered"> Cluttered<br>
+        <input type="checkbox" name="adj" value="Flashy"> Flashy<br>
+        <input type="checkbox" name="adj" value="Simple"> Simple<br>
+
+      </div>
+
+
+      <br>
+      <br>
+      <div>
+        <a class = "img-left">
+          <img  src="images/boomer.png" alt="boomer" width="220" height="260" >
+        </a>
+
+      </div>
+      <br>
+
+      <br>
+
+
+      <div  class="question">
+
+        <h2>3) Their site appears straightforeward to navigate and easy to use</h2>
+        <br>
+        <select name = "agree" >
+          <option value="Strongly Agree">Strongly Agree</option>
+          <option value="Agree" selected="selected">Agree</option>
+          <option value="Disagree">Disagree</option>
+          <option value="Strongly Disagree">Strongly Disagree</option>
+        </select>
+        <br>
+      </div>
+
+
+      <div class="question-right">
+
+        <h2>4) Was it difficult to read the text on their webpage?</h2>
+        <input type="radio" id="very-hard" name="difficulty" value="Very Hard">
+        <label for="very-hard" class>Yes, it was very difficult</label>
+        <br>	<br>
+
+        <input type="radio" id="hard" name="difficulty" value="Hard">
+        <label for="hard">Yes, it was somewhat difficult</label>
+        <br>	<br>
+
+        <input type="radio" id="easy" name="difficulty" value="Easy">
+        <label for="easy">No, it was fairly easy</label>
+        <br>	<br>
+
+        <input type="radio" id="very-easy" name="difficulty" value="Very Easy">
+        <label for="very-easy">No, it was very easy</label>
+
+
+      </div>
+      <br>
+      <div>
+        <a class = "img-left">
+          <img  src="images/phil.png" alt="phil" width="140" height="260" >
+        </a>
+
+      </div>
+      <br>
+
+      <div class="question">
+        <h2>5) Would you consider using their site based on its UI?</h2>
+        <br>
+        <select name ="appeal" id="favorite">
+          <option value="Yes">Yes</option>
+          <option value="Maybe" selected="selected">Maybe</option>
+          <option value="No">No</option>
+        </select>
+
+        <br>
+        <br>
+      </div>
+
+
+      <br>
+
+      <div class="question">
+        <h2>6) Enter any additional comments about the site!</h2>
+        <br>
+        <textarea rows="5" cols="150" name="comments" ></textarea>
+      </div>
+      <br>
+      <br>
+
+
+      <button type="submit" class="block" id="Submit" >Submit Your Questionnaire</button>
+
+    </form>
+    </div>
+	<script src="/assets/action.js"></script>
+
+    <p id="signature">Site created by Alan Harris</p>
+  </body>
+</html>

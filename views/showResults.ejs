@@ -1,0 +1,66 @@
+<html lang="en-US">
+<head>
+    <title>Survey Analysis</title>
+</head>
+
+ <link rel="icon" href="images/leaf-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+<body>
+    <h1>Survey Analysis</h1>
+    <h2>1) What are your initial impressions on the site's aesthetics?</h2>
+    <ul class = "anl">
+    <% for (var i=0; i<results[0].length; i++){ %>
+        <li class = "anl"><i>"<%= results[0][i].impressions %>"</i></li>
+    <% } %>    
+    </ul>
+    <h2>2) Which words would you use to describe the site's UI? </h2>
+    <ul class = "anl">
+    <% for (var i=0; i<results[1].length; i++){ %>
+        <li class = "anl"><%= results[1][i].adj %> :  <%= results[1][i].count %></li>
+    <% } %>    
+    </ul>
+    <h2>3) Their site appears straightforeward to navigate and easy to use</h2>
+    <ul class = "anl">
+    <% for (var i=0; i<results[2].length; i++){ %>
+        <li class = "anl"><%= results[2][i].agree %> :  <%= results[2][i].count %></li>
+    <% } %>    
+    </ul>
+
+     <h2>4) Was it difficult to read the text on their webpage?</h2>
+     <ul class = "anl">
+     <% for (var i=0; i<results[3].length; i++){ %>
+        <li class = "anl"><%= results[3][i].difficulty %>   %<%= Math.round(100*(results[3][i].count/(results[3][0].count+results[3][1].count+results[3][2].count+results[3][3].count))) %></li>
+     <% } %>
+     </ul>
+
+      <h2>5) Would you consider using their site based on its UI</h2>
+      <ul class = "anl">
+      <% for (var i=0; i<results[4].length; i++){ %>
+         <li class = "anl"><%= results[4][i].appeal %> :  <%= results[4][i].count %></li>
+      <% } %>
+      </ul>
+
+      <h2>6) Enter any addition comments about the site!</h2>
+        <ul class = "anl">
+        <% for (var i=0; i<results[5].length; i++){ %>
+          <li class = "anl"><i>"<%= results[5][i].comments %>"</i></li>
+        <% } %>
+        </ul>
+
+       <h2>Submissions</h2>
+         <ul class = "anl">
+
+            <li class = "anl"><%= results[4][0].count + results[4][1].count + results[4][2].count %></li>
+
+         </ul>
+
+      <br>
+      <br>
+
+
+
+</body>
+</html>

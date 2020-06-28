@@ -1,0 +1,249 @@
+/* Style sheet
+   color picker www.w3schools.com/colors/colors_picker.asp
+*/
+/*
+Orange FF6B35
+Beige EFEFD0
+Dark Blue 004E89
+Blue 1A659E
+
+New Palette:
+Dark Blue: #1d3557
+Blue: #457b9d
+Light Blue: #a8dadc
+White: #f1faee
+Red: #e63946
+
+
+*/
+
+
+html{
+	scroll-behavior: smooth;
+}
+ul.hdr {
+	z-index: 3;
+    position: fixed;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #e63946;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+	left: -5px;
+	width: 101%;
+    padding: 0;
+} 
+li.list{
+	float:left
+}	
+li.hd {
+	float: right;
+}
+
+li.hd :hover{
+	background-color: white;
+    -webkit-transition: 1s;
+    transition: 0.3s;
+}
+li.hd a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    text-decoration: none;
+    font-size: 20pt;
+    font-family: 'Varela Round',sans-serif;
+	-webkit-transition: 1s;
+    transition: 0.3s;
+
+}
+li.hd a:hover {
+    color: #457b9d;
+    -webkit-transition: 1s;
+    transition: 0.3s;
+}
+.question-text-right{
+    float:right;
+    width: 45%;
+    margin-right: 5%;
+}	
+	
+body {
+  background-color: #f1faee;
+  
+}
+
+h1 {
+	font-family:'Signika', sans-serif;
+    font-size: 100px;
+	font-weight: 700;
+    color: #1d3557;
+	text-align: center;
+	margin: 0;
+	padding: 85px 0 0 0;
+}
+
+h2 {
+	font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    color: #457b9d;
+	text-align: center;
+}
+
+h3 {
+	font-family:'Signika', sans-serif;
+    font-size: 50px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0;
+	padding: 25px 0 0 0;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  align: center;
+  clear: left
+}
+
+img-main {
+  display: block;
+  margin: 0 auto;
+  align: center;
+  clear: left;
+}
+
+img-left {
+  display: block;
+  margin: 0 auto;
+  float: left;
+}
+
+img-right {
+  display: block;
+  margin: 0 auto;
+  float: right;
+}
+
+p {
+  color: #004E89;
+}
+
+table {
+	border: 1px solid black;
+	background-color: #f1f1c1;
+}
+
+/* Defining styling for a specific element type - each question */
+.question {
+  background-color: white;
+  color: #FF6B35;
+  margin: 20px;
+  padding: 20px;
+  border-left:7px solid #a8dadc;
+  border-radius: 5px;
+  text-align:center;
+
+}
+
+.imageBorder {
+    border:10px solid #fffcfc;
+    border-radius: 25px;
+	-webkit-transition: 1s;
+    transition: 0.3s;
+}
+
+.imageBorder:hover {
+    border:10px solid #a8dadc;
+    border-radius: 10px;
+    -webkit-transition: 1s;
+    transition: 0.3s;
+}
+	
+/* Defining styling for a specific element type - each question */
+.question-left {
+  background-color: white;
+  color: #FF6B35;
+  margin: 20px;
+  padding: 20px;
+  border-left:7px solid #a8dadc;
+  border-radius: 5px;
+  width: 50%;
+  overflow: hidden;
+  float:left;
+
+}
+
+/* Defining styling for a specific element type - each question */
+.question-right {
+  background-color: white;
+  color: #457b9d;
+  margin: 20px;
+  padding: 20px;
+  border-left:7px solid #a8dadc;
+  border-radius: 5px;
+  width: 50%;
+  overflow: hidden;
+  float:right;
+  text-align:center;
+
+
+}
+
+/* Defining styling for a specific element type - large block buttons */
+.block {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #457b9d; 
+  padding: 14px 28px;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 0.3s;
+    font-family:'Signika', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+
+}
+
+.block:hover {
+  background-color: #fff; 
+  color: #457b9d;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: 1s;
+   transition: 0.3s;
+}
+
+
+
+/* Defining styling for a specific element with an id */
+#signature {
+  font-family:"Varela Round";
+  text-align: right;
+  color: black;
+  font-style: italic;
+  font-size: 75%;
+}
+
+
+ul.anl {
+    background: white;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    border-left:7px solid #a8dadc;
+    border-radius: 5px;
+    text-align:center;
+}
+
+li.anl {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    color: #457b9d;
+    text-align: center;
+}
